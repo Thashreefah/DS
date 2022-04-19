@@ -30,22 +30,17 @@ bool isBST(Node *root)
 }
 int main()
 {
-//	struct Node *root=new Node(200);
-//	root->left=new Node(6);
-//	root->left->right=new Node(80);
-//	root->left->right->left=new Node(9);
-//	root->left->right->right=new Node(100);
-//	root->left->right->right->right=new Node(150);
-//	root->left->right->left->left=new Node(7);
-//	root->left->right->left->right=new Node(30);
-//	root->left->right->left->right->left=new Node(17);
-//	root->left->right->left->right->right=new Node(65);
-//	root->left->right->left->right->right->left=new Node(58);
-    struct Node *root = new Node(7);
-    root->left = new Node(5);
-    root->right = new Node(8);
-    root->left->left = new Node(3);
-    root->left->right = new Node(6);
+	struct Node *root=new Node(200);
+	root->left=new Node(6);
+	root->left->right=new Node(80);
+	root->left->right->left=new Node(9);
+	root->left->right->right=new Node(100);
+	root->left->right->right->right=new Node(150);
+	root->left->right->left->left=new Node(7);
+	root->left->right->left->right=new Node(30);
+	root->left->right->left->right->left=new Node(17);
+	root->left->right->left->right->right=new Node(65);
+	root->left->right->left->right->right->left=new Node(58);
 
 	if(isBST(root))
 	cout<<"Is BST";
